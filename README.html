@@ -1,0 +1,83 @@
+### README for `mf_muslim_azkar` Module
+
+#### Overview
+The `mf_muslim_azkar` module is an Odoo application designed to provide reminders for Islamic Azkar (supplications) and Salah (prayers). It allows users to receive notifications for specific Azkar or Salah times, ensuring they stay connected to their daily spiritual practices.
+
+This module is a contribution under the concept of "Zakat al-Ilm" (charity through knowledge) and is aimed at benefiting the community.
+
+---
+
+#### Features
+1. **Azkar Notifications**:
+   - Send random Azkar to users at specified times.
+   - Option to notify all users or specific users.
+
+2. **Salah Reminders**:
+   - Notify users about Salah times based on the configured schedule.
+   - Automatically adjusts for time zones (default: Cairo timezone).
+
+3. **Customizable Notifications**:
+   - Users can configure the Azkar or Salah times.
+   - Notifications can be sent to all users or a selected group.
+
+4. **Automated Cron Jobs**:
+   - Random Azkar notifications are sent periodically using a cron job.
+   - Salah reminders are triggered automatically based on Salah times.
+
+---
+
+#### Installation
+1. Place the `mf_muslim_azkar` module in your Odoo `addons` directory.
+2. Restart your Odoo server.
+3. Navigate to the Apps menu in Odoo.
+4. Search for "Muslim Azkar" and install the module.
+
+---
+
+#### Configuration
+1. **Azkar Configuration**:
+   - Go to the `Muslim Azkar` menu.
+   - Add new Azkar with the required text, time range, and target users.
+
+2. **Salah Configuration**:
+   - Go to the `Muslim Salah Reminder` menu.
+   - Add Salah times and configure the users to be notified.
+
+3. **Time Zone**:
+   - Ensure the company’s timezone is set correctly in the company settings. The module defaults to the Cairo timezone if not configured.
+
+---
+
+#### Usage
+1. **Azkar Notifications**:
+   - Random Azkar are sent to users based on the configured cron job.
+   - You can manually trigger Azkar notifications by calling the `random_zikr_for_cron` method.
+
+2. **Salah Reminders**:
+   - Salah reminders are sent automatically 10 minutes before and after the configured Salah time.
+   - The cron job dynamically adjusts to the next Salah time.
+
+---
+
+#### Cron Jobs
+- **Azkar Notification Cron**:
+  - Sends random Azkar to users periodically.
+  - Configured in the `random_zikr_for_cron` method.
+
+- **Salah Reminder Cron**:
+  - Dynamically adjusts to the next Salah time.
+  - Configured in the `cron_for_salah_reminder` method.
+
+---
+
+#### Contribution
+This module is open for contributions and suggestions. Feel free to report issues or propose improvements to enhance its functionality.
+
+- **Author**: Eng. Mohamed Fouad
+- **Website**: [https://rizmiware.com](https://rizmiware.com)
+- **LinkedIn**: [https://www.linkedin.com/in/mfhm95](https://www.linkedin.com/in/mfhm95)
+
+---
+
+#### License
+This module is distributed as a form of charity and is free to use. Contributions are welcome to improve its functionality and benefit the community.
