@@ -1,0 +1,170 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mf_muslim_azkar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-20 20:10+0000\n"
+"PO-Revision-Date: 2025-05-20 20:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__all_users
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__all_users
+msgid "All users"
+msgstr "جميع المستخدمين"
+
+#. module: mf_muslim_azkar
+#: model:ir.ui.menu,name:mf_muslim_azkar.menu_muslim_azan
+msgid "Azan"
+msgstr "الأذان"
+
+#. module: mf_muslim_azkar
+#: model:ir.ui.menu,name:mf_muslim_azkar.menu_muslim_azkar
+msgid "Azkar"
+msgstr "أذكار"
+
+#. module: mf_muslim_azkar
+#: model:ir.actions.server,name:mf_muslim_azkar.azkar_cron_ir_actions_server
+#: model:ir.cron,cron_name:mf_muslim_azkar.azkar_cron
+msgid "Azkar Reminder"
+msgstr "التذكير بالاذكار"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__create_uid
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__create_date
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__display_name
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.ui.menu,name:mf_muslim_azkar.parent_menu_muslim_azkar
+msgid "Hisn Al-Muslim"
+msgstr "حصن المسلم"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__id
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__id
+msgid "ID"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan____last_update
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__write_uid
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__write_date
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.actions.act_window,name:mf_muslim_azkar.action_muslim_azan
+msgid "Muslim Azan"
+msgstr "الأذان"
+
+#. module: mf_muslim_azkar
+#: model:ir.actions.act_window,name:mf_muslim_azkar.action_muslim_azkar
+#: model:ir.model,name:mf_muslim_azkar.model_muslim_azkar
+msgid "Muslim Azkar"
+msgstr "أذكار المسلم"
+
+#. module: mf_muslim_azkar
+#: model:ir.model,name:mf_muslim_azkar.model_muslim_azan
+msgid "Muslim Salah Reminder"
+msgstr "تذكير الصلاة للمسلم"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__name
+msgid "Name"
+msgstr "الذكر"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__name
+msgid "Name"
+msgstr "الصلاة"
+
+#. module: mf_muslim_azkar
+#: model:ir.actions.server,name:mf_muslim_azkar.azan_cron_ir_actions_server
+#: model:ir.cron,cron_name:mf_muslim_azkar.azan_cron
+msgid "Salah Reminder"
+msgstr "ىتذكير الصلاة"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__azan_time
+msgid "Salah Time"
+msgstr "توقيت الصلاة"
+
+#. module: mf_muslim_azkar
+#: model_terms:ir.ui.view,arch_db:mf_muslim_azkar.view_muslim_azan_form
+#: model_terms:ir.ui.view,arch_db:mf_muslim_azkar.view_muslim_azan_tree
+#: model_terms:ir.ui.view,arch_db:mf_muslim_azkar.view_muslim_azkar_form
+msgid "Send"
+msgstr "تذكير"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__user_ids
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__user_ids
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azkar__zikr
+msgid "Zikr"
+msgstr "الذكر"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields,field_description:mf_muslim_azkar.field_muslim_azan__zikr
+msgid "Zikr"
+msgstr "وصف الذكر"
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields.selection,name:mf_muslim_azkar.selection__muslim_azan__name__2
+msgid "صلاة الظهر"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields.selection,name:mf_muslim_azkar.selection__muslim_azan__name__5
+msgid "صلاة العشاء"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields.selection,name:mf_muslim_azkar.selection__muslim_azan__name__3
+msgid "صلاة العصر"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields.selection,name:mf_muslim_azkar.selection__muslim_azan__name__1
+msgid "صلاة الفجر"
+msgstr ""
+
+#. module: mf_muslim_azkar
+#: model:ir.model.fields.selection,name:mf_muslim_azkar.selection__muslim_azan__name__4
+msgid "صلاة المغرب"
+msgstr ""

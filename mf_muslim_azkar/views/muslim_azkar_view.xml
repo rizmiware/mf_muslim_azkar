@@ -1,0 +1,65 @@
+<!--##############################################################################-->
+<!--#    Copyright (C) 2024.-->
+<!--#    Author: Eng.Mohamed Fouad (<m.fouad@mfhm95.com>)-->
+<!--#    website: https://rizmiware.com-->
+<!--#    linkedin: https://www.linkedin.com/in/mfhm95-->
+<!--#-->
+<!--# This contribution is considered a form of "Zakat al-Ilm" (charity through knowledge),-->
+<!--# which is highly encouraged in Islam.-->
+<!--# We welcome and appreciate your contributions and suggestions for improving this project.-->
+<!--# Feel free to report issues or propose improvements,-->
+<!--# as this is a charity-focused initiative aimed at benefiting the community.-->
+<!--##############################################################################-->
+<odoo>
+    <data>
+
+        <record id="view_muslim_azkar_form" model="ir.ui.view">
+            <field name="name">muslim.azkar.form</field>
+            <field name="model">muslim.azkar</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="send_notification" type="object" string="Send" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="zikr"/>
+                            <field name="all_users"/>
+
+                            <field name="user_ids" attrs="{'readonly':[('all_users','=',True)]}"
+                                   widget="many2many_tags"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_muslim_azkar_tree" model="ir.ui.view">
+            <field name="name">muslim.azkar.tree</field>
+            <field name="model">muslim.azkar</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="zikr"/>
+                    <!--                    <field name="all_users"/>-->
+                    <!--                    <field name="user_ids" attrs="{'readonly':[('all_users','=',True)]}"/>-->
+                    <!--                    <button name="send_notification" type="object" string="Send"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_muslim_azkar" model="ir.actions.act_window">
+            <field name="name">Muslim Azkar</field>
+            <field name="res_model">muslim.azkar</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu Item -->
+        <menuitem id="parent_menu_muslim_azkar" name="Hisn Al-Muslim" action="action_muslim_azkar"
+                  web_icon="mf_muslim_azkar,static/description/app_icon.png"
+                  groups="base.group_erp_manager"/>
+        <menuitem id="menu_muslim_azkar" name="Azkar" action="action_muslim_azkar" parent="parent_menu_muslim_azkar"/>
+
+    </data>
+</odoo>

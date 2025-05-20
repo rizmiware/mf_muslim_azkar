@@ -1,0 +1,66 @@
+<!--##############################################################################-->
+<!--#    Copyright (C) 2024.-->
+<!--#    Author: Eng.Mohamed Fouad (<m.fouad@mfhm95.com>)-->
+<!--#    website: https://rizmiware.com-->
+<!--#    linkedin: https://www.linkedin.com/in/mfhm95-->
+<!--#-->
+<!--# This contribution is considered a form of "Zakat al-Ilm" (charity through knowledge),-->
+<!--# which is highly encouraged in Islam.-->
+<!--# We welcome and appreciate your contributions and suggestions for improving this project.-->
+<!--# Feel free to report issues or propose improvements,-->
+<!--# as this is a charity-focused initiative aimed at benefiting the community.-->
+<!--##############################################################################-->
+<odoo>
+    <data>
+
+        <record id="view_muslim_azan_form" model="ir.ui.view">
+            <field name="name">muslim.azan.form</field>
+            <field name="model">muslim.azan</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="send_notification" type="object" string="Send" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="zikr"/>
+                            <field name="azan_time" widget="float_time"/>
+                            <field name="all_users"/>
+                            <field name="user_ids" attrs="{'readonly':[('all_users','=',True)]}"
+                                   widget="many2many_tags"/>
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_muslim_azan_tree" model="ir.ui.view">
+            <field name="name">muslim.azan.tree</field>
+            <field name="model">muslim.azan</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="zikr"/>
+                    <field name="azan_time" widget="float_time"/>
+                    <!--                    <field name="all_users"/>-->
+                    <!--                    <field name="user_ids" attrs="{'readonly':[('all_users','=',True)]}"/>-->
+                    <button name="send_notification" type="object" string="Send" class="oe_highlight"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_muslim_azan" model="ir.actions.act_window">
+            <field name="name">Muslim Azan</field>
+            <field name="res_model">muslim.azan</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu Item -->
+        <!--        <menuitem id="parent_menu_muslim_azan" name="Muslim Azan" action="action_muslim_azan"-->
+        <!--                  groups="base.group_erp_manager"/>-->
+        <menuitem id="menu_muslim_azan" name="Azan" action="action_muslim_azan" parent="parent_menu_muslim_azkar"/>
+
+    </data>
+</odoo>

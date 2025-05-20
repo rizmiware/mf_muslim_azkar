@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisn Al-Muslim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #4caf50, #81c784);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+        .features-section {
+            padding: 50px 20px;
+        }
+        .features-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .carousel img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #81c784;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h1>Hisn Al-Muslim</h1>
+    <p>Your companion for daily Azkar and Salah reminders, ensuring you stay connected to your spiritual practices.</p>
+</section>
+
+<!-- Features Section -->
+<section class="features-section container">
+    <h2>Key Features</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">Azkar Notifications</h5>
+                    <p class="card-text">Receive random Azkar notifications at specified times to keep your heart and mind connected to Allah.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">Salah Reminders</h5>
+                    <p class="card-text">Get notified about Salah times dynamically based on your timezone, ensuring you never miss a prayer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card feature-card">
+                <div class="card-body">
+                    <h5 class="card-title">Customizable Settings</h5>
+                    <p class="card-text">Easily configure Azkar and Salah times, and choose whether to notify all users or specific groups.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshots Section -->
+<section class="container my-5">
+    <h2 class="text-center">Screenshots</h2>
+    <div id="screenshotCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="screenshot_1.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+            <div class="carousel-item">
+                <img src="screenshot_2.png" class="d-block w-100" alt="Screenshot 2">
+            </div>
+            <div class="carousel-item">
+                <img src="screenshot_3.png" class="d-block w-100" alt="Screenshot 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="container my-5">
+    <h2 class="text-center">About the Module</h2>
+    <p class="text-center">
+        The Hisn Al-Muslim module is designed to help Muslims stay connected to their daily spiritual practices.
+        It provides automated reminders for Azkar and Salah, ensuring you never miss an opportunity to remember Allah.
+        This module is a form of "Zakat al-Ilm" (charity through knowledge) and is free to use and contribute to.
+    </p>
+</section>
+
+<!-- Support Section -->
+<section class="container my-5">
+    <h2 class="text-center">Contribute & Collaborate</h2>
+    <p class="text-center">
+        This module is open source and welcomes contributions from the community. Whether you want to report issues, suggest improvements, or add new features, your input is highly valued.
+    </p>
+    <div class="text-center">
+        <p>Visit the project repository: <a href="https://github.com/mfhm95/mf_muslim_azkar" target="_blank">GitHub Repository</a></p>
+        <p>Contact the author: <a href="mailto:info@rizmiware.com">info@rizmiware.com</a></p>
+        <p>Website: <a href="https://rizmiware.com">Rizmiware</a></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Rizmiware. All rights reserved.</p>
+    <p>Developed by <a href="https://www.linkedin.com/in/mfhm95" target="_blank">Eng. Mohamed Fouad</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

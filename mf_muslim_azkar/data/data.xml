@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="muslim.azkar" id="tsbe7">
+            <field name="name">تسبيح</field>
+            <field name="zikr">سبحان الله وبحمده .. سبحان الله العظيم</field>
+            <field name="all_users">True</field>
+        </record>
+        <record model="muslim.azkar" id="shahada">
+            <field name="name">الشهادة</field>
+            <field name="zikr">أشهد ان لا إله إلا الله و أشهد ان محمد رسول الله</field>
+        </record>
+        <record model="muslim.azkar" id="hamd">
+            <field name="name">الحمد</field>
+            <field name="zikr">الحمدلله كما ينبغى لجلال وجهك وعظيم سلطانك</field>
+        </record>
+        <record model="muslim.azkar" id="itqan">
+            <field name="name">اتقان العمل</field>
+            <field name="zikr">اللهم بارك لنا فى عملنا هذا وارقنا خيره واكفنا شره</field>
+        </record>
+
+        <record model="muslim.azan" id="fajr">
+            <field name="name">1</field>
+            <field name="zikr">حان الآن موعد الصلاة</field>
+            <field name="azan_time">5</field>
+        </record>
+        <record model="muslim.azan" id="zohr">
+            <field name="name">2</field>
+            <field name="zikr">حان الآن موعد الصلاة</field>
+            <field name="azan_time">11.75</field>
+        </record>
+        <record model="muslim.azan" id="asr">
+            <field name="name">3</field>
+            <field name="zikr">حان الآن موعد الصلاة</field>
+            <field name="azan_time">14.53</field>
+        </record>
+        <record model="muslim.azan" id="maghrib">
+            <field name="name">4</field>
+            <field name="zikr">حان الآن موعد الصلاة</field>
+            <field name="azan_time">16.90</field>
+        </record>
+        <record model="muslim.azan" id="ishaa">
+            <field name="name">5</field>
+            <field name="zikr">حان الآن موعد الصلاة</field>
+            <field name="azan_time">18.30</field>
+        </record>
+
+    </data>
+</odoo>

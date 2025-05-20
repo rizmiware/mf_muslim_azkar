@@ -1,0 +1,38 @@
+<!--##############################################################################-->
+<!--#    Copyright (C) 2024.-->
+<!--#    Author: Eng.Mohamed Fouad (<m.fouad@mfhm95.com>)-->
+<!--#    website: https://rizmiware.com-->
+<!--#    linkedin: https://www.linkedin.com/in/mfhm95-->
+<!--#-->
+<!--#    It is forbidden to publish, distribute, sublicense, or sell copies-->
+<!--#    of the Software or modified copies of the Software.-->
+<!--##############################################################################--><odoo>
+    <data>
+<!--
+          <record id="object0" model="mf_muslim_azkar.mf_muslim_azkar">
+            <field name="name">Object 0</field>
+            <field name="value">0</field>
+          </record>
+
+          <record id="object1" model="mf_muslim_azkar.mf_muslim_azkar">
+            <field name="name">Object 1</field>
+            <field name="value">10</field>
+          </record>
+
+          <record id="object2" model="mf_muslim_azkar.mf_muslim_azkar">
+            <field name="name">Object 2</field>
+            <field name="value">20</field>
+          </record>
+
+          <record id="object3" model="mf_muslim_azkar.mf_muslim_azkar">
+            <field name="name">Object 3</field>
+            <field name="value">30</field>
+          </record>
+
+          <record id="object4" model="mf_muslim_azkar.mf_muslim_azkar">
+            <field name="name">Object 4</field>
+            <field name="value">40</field>
+          </record>
+-->
+    </data>
+</odoo>
