@@ -9,5 +9,4 @@
 #    of the Software or modified copies of the Software.
 ##############################################################################
 
-from . import bus
-from . import muslim_azkar,muslim_azan
+from . import controllers
