@@ -44,8 +44,11 @@
         'views/muslim_azan_view.xml',
     ],
     'assets': {
-        'web.assets_backend':
-            ['mf_muslim_azkar/static/src/js/*.js']
+        'web.assets_backend': [
+            'mf_muslim_azkar/static/src/js/notification.esm.js',
+            'mf_muslim_azkar/static/src/js/notification_services.esm.js',
+
+        ],
     },
     # only loaded in demonstration mode
     'demo': [

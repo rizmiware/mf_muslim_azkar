@@ -27,10 +27,16 @@ class MuslimAzkar(models.Model):
 
     name = fields.Char(required=True)
     zikr = fields.Text(required=True)
+    from_time = fields.Float(
+        string='From time',
+        required=False)
+    to_time = fields.Float(
+        string='To time',
+        required=False)
     all_users = fields.Boolean(string='All users', required=False)
     user_ids = fields.Many2many(comodel_name='res.users',string='Users')
 
-    def send_notification(self):
+    def _send_notification(self):
         target = self.env['res.users'].search([]).mapped('partner_id') if self.all_users else self.user_ids.mapped('partner_id')
         self._notify_channel(DEFAULT, self.zikr, self.name, sticky=False, target=target , id=None)
 
@@ -45,7 +51,7 @@ class MuslimAzkar(models.Model):
             id=None,
     ):
         if not target:
-            target = self.user_ids.mapped('partner_id')
+            target = self.env['res.users'].search([]).mapped('partner_id')
             if not target:
                 return
 
@@ -63,5 +69,5 @@ class MuslimAzkar(models.Model):
     def random_zikr_for_cron(self):
         zikr = self.env['muslim.azkar'].search([])
         zikr = zikr[random.randint(0, len(zikr) - 1)]
-        zikr.send_notification()
+        zikr._send_notification()
         return True

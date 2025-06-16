@@ -38,8 +38,7 @@ class MuslimAzan(models.Model):
     user_ids = fields.Many2many(comodel_name='res.users',string='Users')
 
 
-    def send_notification(self):
-        print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+    def _send_notification(self):
         selection_dict = dict(self._fields['name'].selection)
         # Get the value (e.g., "صلاة الفجر") from the selection dictionary
         salah_name = selection_dict.get(self.name, self.name)
@@ -69,7 +68,6 @@ class MuslimAzan(models.Model):
             "id": id,
         }
         notifications = [[partner, "muslim.azan", [bus_message]] for partner in target]
-        print(notifications,'NNNNNNNNNNNNNNN')
         self.env["bus.bus"]._sendmany(notifications)
 
     def cron_for_salah_reminder(self):
@@ -94,7 +92,7 @@ class MuslimAzan(models.Model):
         ], order='azan_time', limit=1)
         if current_salah:
             # Notify users for the current salah
-            current_salah.send_notification()
+            current_salah._send_notification()
 
             # Determine the next salah
             next_salah_number = int(current_salah.name) + 1 if int(current_salah.name) < 5 else 1
